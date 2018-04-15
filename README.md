@@ -2,19 +2,19 @@ N-way Set Associative Cache with pseudo LRU replcaement policy
 
 ## DATA STRUCTURE:
 
-CACHE *|
-  
-       |→CACHE_WAY ** |
-     
-       |              |→CACHE_LINE** |
+    CACHE *|
+    
+           |→CACHE_WAY ** |
+        
+           |              |→CACHE_LINE** |
 
-       |                             |→uint64_t tag
+           |                             |→uint64_t tag
 
-       |                             |→unsigned int valid_bit
-       
-       |→LRU_MATRIX ** |
-       |               |→ unsigned int ** matrix
-       |→CACHE_PROPERTY
+           |                             |→unsigned int valid_bit
+        
+           |→LRU_MATRIX ** |
+           |               |→ unsigned int ** matrix
+           |→CACHE_PROPERTY
 
 struct CACHE stores array of CACHE_WAY with length n of given n-way set associative. struct CHACHE_WAY is a collection of blocks for that particular way. Its length is equal to the total number of sets. Each block is implemented in struct CACHE_LINE with attribute tag and valid_bit
 
