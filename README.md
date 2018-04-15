@@ -22,7 +22,7 @@ struct CACHE also store collection of LRU_MATRIX, one matrix for each set, used 
 
 Lastly, struct CACHE_PROPERTY is included in CACHE as a convenient store of cache attributes like size, associativity, number of sets, number of set bits, number of tag bits.
 
-##ALGORITHM:
+## ALGORITHM:
 
 create_cache() initializes CACHE with all its parameters. 
 
