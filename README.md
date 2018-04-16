@@ -28,7 +28,7 @@ create_cache() initializes CACHE with all its parameters.
 
 access_cache() has been modified to lookup tag in cache, return a hit if a valid one is found and update the associated LRU_MATRIX. On cache miss, the implemented psuedo-LRU policy uses the LRU_matrix to determine the block to replace.
 
-Psedo-LRU Policy:
+Pseudo-LRU Policy:
 
     https://en.wikipedia.org/wiki/Pseudo-LRU
             
