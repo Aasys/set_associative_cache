@@ -2,16 +2,11 @@ N-way Set Associative Cache with pseudo LRU replcaement policy
 
 ## DATA STRUCTURE:
 
-    CACHE *|
-    
-           |→CACHE_WAY ** |
-        
+    CACHE *|    
+           |→CACHE_WAY ** |        
            |              |→CACHE_LINE** |
-
            |                             |→uint64_t tag
-
-           |                             |→unsigned int valid_bit
-        
+           |                             |→unsigned int valid_bit        
            |→LRU_MATRIX ** |
            |               |→ unsigned int ** matrix
            |→CACHE_PROPERTY
